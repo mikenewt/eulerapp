@@ -17,3 +17,10 @@ describe("Euler Question 1", function() {
   });
 });
 
+describe("Is the answer greater than 1000?", function(){
+	var answer = $('')
+	
+	it
+
+});
+
