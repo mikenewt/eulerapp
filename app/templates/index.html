@@ -27,31 +27,17 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 		
-			<div id="fb-root"></div>
-	<script>
-	
-	  window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '1476844835896069',
-          xfbml      : true,
-          version    : 'v2.0'
-        });
-      };
-	
-		  (function(d){
-     var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
-     js = d.createElement('script'); js.id = id; js.async = true;
-     js.src = "http://connect.facebook.net/en_US/all.js";
-     d.getElementsByTagName('head')[0].appendChild(js);
-   }(document));
-	</script>
-
-        <!-- Add your site or application content here -->
         <h1>Welcome to the Euler App</h1>
 		
 		<h3>Enter Euler Question Data Below</h3>
 		
 		<div class="container">
+			<div class="headerRow">
+				<button class="btn-lg">
+					<a href="../static/js/vendor/jasmine/SpecRunner.html">Run Tests</a>
+				</button>
+			</div>
+
 		
 			<div class="row">
 			
@@ -61,20 +47,11 @@
 				<div class="col-md-4">
 					<form role="form">
 					  <div class="form-group">
-						<label for="exampleInputEmail1">Euler Problem Number</label>
-						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter problem parameter">
+						<label for="answer-input">Euler Problem Number</label>
+						<input type="text" class="form-control" id="answer-input" placeholder="Enter problem parameter">
 					  </div>
-						<div class="form-group">
-						<label for="exampleInputFile">File input</label>
-						<input type="file" id="exampleInputFile">
-						<p class="help-block">Example block-level help text here.</p>
-					  </div>
-					  <div class="checkbox">
-						<label>
-						  <input type="checkbox"> Check me out
-						</label>
-					  </div>
-					  <button type="submit" class="btn btn-default">Submit</button>
+					
+					  <button type="submit" class="btn btn-default" id="answer-submit">Submit</button>
 					</form>
 				</div>
 				
@@ -83,6 +60,10 @@
 			</div>
 		</div>
 		
+		<div id="answerContainer">
+			<p id="answerP"></p>
+		</div>
+
 		<p>Username: eulerapp </p>
 		<p>PW: projecteuler</p>
 		
