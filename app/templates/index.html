@@ -47,20 +47,11 @@
 				<div class="col-md-4">
 					<form role="form">
 					  <div class="form-group">
-						<label for="exampleInputEmail1">Euler Problem Number</label>
-						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter problem parameter">
+						<label for="answer-input">Euler Problem Number</label>
+						<input type="text" class="form-control" id="answer-input" placeholder="Enter problem parameter">
 					  </div>
-						<div class="form-group">
-						<label for="exampleInputFile">File input</label>
-						<input type="file" id="exampleInputFile">
-						<p class="help-block">Example block-level help text here.</p>
-					  </div>
-					  <div class="checkbox">
-						<label>
-						  <input type="checkbox"> Check me out
-						</label>
-					  </div>
-					  <button type="submit" class="btn btn-default">Submit</button>
+					
+					  <button type="submit" class="btn btn-default" id="answer-submit">Submit</button>
 					</form>
 				</div>
 				
@@ -69,6 +60,10 @@
 			</div>
 		</div>
 		
+		<div id="answerContainer">
+			<p id="answerP"></p>
+		</div>
+
 		<p>Username: eulerapp </p>
 		<p>PW: projecteuler</p>
 		
